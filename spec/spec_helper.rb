@@ -13,3 +13,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+dir = File.dirname(__FILE__)
+Slcsp::Config.configure do |config|
+  config.zips_file = File.join(dir, 'doc', 'zips.csv')
+end
