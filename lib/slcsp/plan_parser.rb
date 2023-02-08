@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "csv"
-require "pry"
 
 module Slcsp
   # parses the csv with plans and save data to Index in the form
