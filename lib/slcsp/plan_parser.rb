@@ -4,7 +4,7 @@ require "csv"
 
 module Slcsp
   # parses the csv with plans and save data to Index in the form
-  # e.g. {'VT 11' => [102.1, 192.3]} for the defined metall class
+  # e.g. {'VT 11' => [102.1, 192.3]} for the defined metal level
   class PlanParser
     KEY_FIELDS = %w[state rate_area].freeze
     VALUE_FIELDS = %w[rate].freeze

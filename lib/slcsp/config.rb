@@ -8,7 +8,7 @@ module Slcsp
     include Singleton
 
     class << self
-      attr_accessor :zips_file, :plans_file, :slcsp_file, :target_level
+      attr_accessor :zips_file, :plans_file, :slcsp_file, :target_level, :output_medium
 
       def configure
         yield self
