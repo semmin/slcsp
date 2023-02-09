@@ -1,35 +1,21 @@
 # Slcsp
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/slcsp`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome AdHoc professional. This is a repository with the source code of slcsp gem.
+There are two ways to see the desired output:
 
-TODO: Delete this and the text above, and describe your gem
+## Installation and usage
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'slcsp'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
+Provided, you have bundler installed
 
     $ gem install slcsp
+    $ slcsp match
 
-## Usage
+OR Use binary as is
 
-TODO: Write usage instructions here
+1. cd into gem's directory
+2. run command
 
-## Development
+    $ exe/slcsp match
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/slcsp.
+The gem comes with default configurations. Ability to pass different config options will be added
+in future versions.
