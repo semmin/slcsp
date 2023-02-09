@@ -5,8 +5,8 @@ require_relative "lib/slcsp/version"
 Gem::Specification.new do |spec|
   spec.name = "slcsp"
   spec.version = Slcsp::VERSION
-  spec.authors = ["Simon Bagreev"]
-  spec.email = ["sbagreev@gmail.com"]
+  spec.authors = ["Anonymous"]
+  spec.email = ["anon@example.com"]
 
   spec.summary = "Ad Hoc home assignment"
   spec.description = "Calculate the second lowest cost silver plan"
