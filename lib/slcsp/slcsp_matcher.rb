@@ -13,9 +13,10 @@ module Slcsp
     end
 
     def match_each
+      @output_medium.print(@slcsp_parser.headers_line)
       @slcsp_parser.parse_each do |row|
         second = match(row)
-        @output_medium.print("#{row['zipcode']},#{second}")
+        @output_medium.print("#{row['zipcode']},#{format(second)}\n")
       end
     end
 
@@ -30,6 +31,11 @@ module Slcsp
       end
 
       plans.size < 2 ? nil : plans.sort[1]
+    end
+
+    def format(number)
+      converted = number.to_f
+      converted.zero? ? nil : sprintf('%.2f', converted)
     end
   end
 end

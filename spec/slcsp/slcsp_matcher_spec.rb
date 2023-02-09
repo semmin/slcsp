@@ -7,8 +7,8 @@ require "helpers/output_helper"
 RSpec.describe Slcsp::SlcspMatcher do
   include OutputHelper
 
-  let(:zip_index) { Slcsp::Index.new({}) }
-  let(:plan_index) { Slcsp::Index.new({}) }
+  let(:zip_index) { Slcsp::Index.new() }
+  let(:plan_index) { Slcsp::Index.new() }
   let(:zip_parser) { Slcsp::ZipParser.new(Slcsp::Config.zips_file, zip_index) }
   let(:plan_parser) { Slcsp::PlanParser.new(Slcsp::Config.plans_file, plan_index) }
   let(:slcsp_parser) { Slcsp::SlcspParser.new(Slcsp::Config.slcsp_file) }

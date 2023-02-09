@@ -18,5 +18,12 @@ module Slcsp
         end
       end
     end
+
+    def headers_line
+      f = File.open(@path)
+      headers = f.gets
+      f.close
+      headers
+    end
   end
 end

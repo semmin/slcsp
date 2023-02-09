@@ -4,7 +4,7 @@ module Slcsp
   # Sort of inverted index, in fact a simple hash for fast finds zip -> [rate_area, rate_area]
   # e.g. {'23451' => ['VA 11', 'VA 12'], '75025' => ['TX 1', 'TX 2']}
   class Index
-    def initialize(data)
+    def initialize(data={})
       @data = data
     end
 
