@@ -3,11 +3,12 @@
 Welcome AdHoc professional. This is a repository with the source code of slcsp gem.
 There are two ways to see the desired output:
 
-## Installation from rubygems.org
+## Installation and usage
 
 Provided, you have bundler installed
 
     $ gem install slcsp
+    $ slcsp match
 
 OR Use binary as is
 
