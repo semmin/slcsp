@@ -17,15 +17,10 @@ module Slcsp
 
       Slcsp::Config.configure do |config|
         config.zips_file = File.join(dir, 'data', 'zips.csv')
-        say "configured zips file path to #{config.zips_file}"
         config.plans_file = File.join(dir, 'data', 'plans.csv')
-        say "configured plans file path to #{config.plans_file}"
         config.slcsp_file = File.join(dir, 'data', 'slcsp.csv')
-        say "configured slcsp file path to #{config.slcsp_file}"
         config.output_medium = $stdout
-        say "configured output medium to be #{config.output_medium.inspect}"
         config.target_level = 'Silver'
-        say "configured taregt level medium to be #{config.target_level}"
       end
     end
 
@@ -38,13 +33,8 @@ module Slcsp
       zip_parser = Slcsp::ZipParser.new(Slcsp::Config.zips_file, zip_index)
       plan_parser = Slcsp::PlanParser.new(Slcsp::Config.plans_file, plan_index)
 
-      say "Started indexing zips file..."
       zip_parser.parse_and_record if zip_index.data.empty?
-      say "Completed indexing zips file. Total: #{zip_index.data.size} records."
-
-      say "Started indexing plans file..."
       plan_parser.parse_and_record if plan_index.data.empty?
-      say "Completed indexing plans file. Total: #{plan_index.data.size} records."
 
       return zip_index, plan_index
     end
